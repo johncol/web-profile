@@ -1,0 +1,24 @@
+@import './../../scss/mixins';
+
+$diameter: 96px;
+$diameter-viewport-medium: 128px;
+
+.photo {
+  overflow: hidden;
+  border-radius: $diameter / 2;
+  width: $diameter;
+  height: $diameter;
+  margin-top: 10px;
+  justify-self: center;
+
+  @include media-query-for(tablet) {
+    border-radius: $diameter-viewport-medium / 2;
+    width: $diameter-viewport-medium;
+    height: $diameter-viewport-medium;
+    margin-top: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

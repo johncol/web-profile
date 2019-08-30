@@ -1,0 +1,14 @@
+@import './variables';
+
+@mixin media-query-for($device) {
+  @if $device == tablet {
+    @media only screen and (min-width: $viewport-medium) {
+      @content;
+    }
+  }
+  @if $device == desktop {
+    @media only screen and (min-width: $viewport-large) {
+      @content;
+    }
+  }
+}
