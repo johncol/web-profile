@@ -1,11 +1,12 @@
 import React from 'react';
 
+import photo from './photo.jpg';
 import './Photo.scss';
 
 const Photo = () => {
   return (
     <div className="photo">
-      <img src="/assets/images/photo.jpg" alt="John's Profile" />
+      <img src={photo} alt="John's Profile" />
     </div>
   );
 };
