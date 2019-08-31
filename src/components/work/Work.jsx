@@ -1,11 +1,10 @@
 import React from 'react';
 
 import Page from '../page/Page';
-import DefaultHeader from '../header/DefaultHeader';
 
 const Work = () => {
   return (
-    <Page header={<DefaultHeader />}>
+    <Page>
       <article>
         <p>
           I currently work as a fullstack engineer at Twilio, where, along with my 3

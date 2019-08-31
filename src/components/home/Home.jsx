@@ -2,13 +2,12 @@ import React from 'react';
 
 import Page from '../page/Page';
 import Photo from '../photo/Photo';
-import DefaultHeader from '../header/DefaultHeader';
 
 import './Home.scss';
 
 const Home = () => {
   return (
-    <Page header={<DefaultHeader />}>
+    <Page>
       <div className="content">
         <Photo />
         <article>

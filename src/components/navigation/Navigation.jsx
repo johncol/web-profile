@@ -1,21 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
+import NavigationLink from '../navigation-link/NavigationLink';
 
 import './Navigation.scss';
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className="navigation">
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active" exact={true}>
-            Home
-          </NavLink>
+          <NavigationLink to="/">Home</NavigationLink>
         </li>
         <li>
-          <NavLink to="/work" activeClassName="active" exact={true}>
-            Work
-          </NavLink>
+          <NavigationLink to="/work">Work</NavigationLink>
+        </li>
+        <li>
+          <NavigationLink to="/showcase">Showcase</NavigationLink>
         </li>
       </ul>
     </nav>
