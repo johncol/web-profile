@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Page from '../page/Page';
-import ShowcaseList from '../showcase-list/ShowcaseList';
-import ShowcaseItem from '../showcase-item/ShowcaseItem';
+import LinksList from '../shared/links-list/LinksList';
+import LinksListItem from '../shared/links-list-item/LinksListItem';
 
 const Showcase = () => {
   return (
@@ -12,35 +12,35 @@ const Showcase = () => {
         have taken. I'll list here the ones that are worth it:
       </p>
 
-      <ShowcaseList>
-        <ShowcaseItem
+      <LinksList>
+        <LinksListItem
           name="Would you rather?"
           link="https://johncol.github.io/nano-degree-would-you-rather"
         >
           Sample react+redux project that allows users to post and answer questions and
           see statistics. Use johndoe as user and password to check it working.
-        </ShowcaseItem>
+        </LinksListItem>
 
-        <ShowcaseItem
+        <LinksListItem
           name="Click the canvas"
           link="https://johncol.github.io/click-the-canvas"
         >
           Simple html/javascript program that interacts with the user and draws some
           geometrical shapes
-        </ShowcaseItem>
+        </LinksListItem>
 
-        <ShowcaseItem name="Trillo" link="https://johncol.github.io/css-course-trillo">
+        <LinksListItem name="Trillo" link="https://johncol.github.io/css-course-trillo">
           Simple webpage built using flexbox
-        </ShowcaseItem>
+        </LinksListItem>
 
-        <ShowcaseItem name="Natours" link="https://johncol.github.io/css-course-natours">
+        <LinksListItem name="Natours" link="https://johncol.github.io/css-course-natours">
           Beautiful web page showcasing many interesting CSS3 features and techniques
-        </ShowcaseItem>
+        </LinksListItem>
 
-        <ShowcaseItem name="Nexter" link="https://johncol.github.io/css-course-nexter">
+        <LinksListItem name="Nexter" link="https://johncol.github.io/css-course-nexter">
           Awesome webpage to showcase how to use CSS3 grids to build your site layout
-        </ShowcaseItem>
-      </ShowcaseList>
+        </LinksListItem>
+      </LinksList>
     </Page>
   );
 };

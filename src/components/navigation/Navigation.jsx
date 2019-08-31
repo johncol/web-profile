@@ -17,6 +17,9 @@ const Navigation = () => {
         <li>
           <NavigationLink to="/showcase">Showcase</NavigationLink>
         </li>
+        <li>
+          <NavigationLink to="/publications">Publications</NavigationLink>
+        </li>
       </ul>
     </nav>
   );

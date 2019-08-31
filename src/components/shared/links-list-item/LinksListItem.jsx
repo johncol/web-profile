@@ -1,8 +1,8 @@
 import React from 'react';
 
-import BlankTargetLink from '../shared/blank-target-link/BlankTargetLink';
+import BlankTargetLink from '../blank-target-link/BlankTargetLink';
 
-const ShowcaseItem = props => {
+const LinksListItem = props => {
   return (
     <section>
       <h6>
@@ -13,4 +13,4 @@ const ShowcaseItem = props => {
   );
 };
 
-export default ShowcaseItem;
+export default LinksListItem;
