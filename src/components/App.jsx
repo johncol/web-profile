@@ -7,7 +7,7 @@ import Showcase from './showcase/Showcase';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/web-profile">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/work" component={Work} />
