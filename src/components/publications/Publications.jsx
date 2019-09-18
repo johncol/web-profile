@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Page from '../page/Page';
-import BlankTargetLink from '../shared/blank-target-link/BlankTargetLink';
 import LinksList from '../shared/links-list/LinksList';
 import LinksListItem from '../shared/links-list-item/LinksListItem';
 
