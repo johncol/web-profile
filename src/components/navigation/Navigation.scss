@@ -1,4 +1,5 @@
 @import './../../scss/mixins';
+@import './../../scss/variables';
 
 .navigation {
   background-color: transparent;
@@ -18,19 +19,19 @@
       a::after {
         content: '/';
         margin: 0 20px;
-        color: #777;
+        color: $color-grey;
       }
     }
 
     a {
       color: inherit;
       transition: all 0.2s ease-out;
-      color: #777;
+      color: $color-grey;
       text-transform: capitalize;
       padding: 0;
 
       &.active {
-        color: #000;
+        color: $color-black;
 
         &:hover {
           cursor: default;
@@ -42,7 +43,7 @@
       }
 
       &:not(.active):hover {
-        color: #2196f3;
+        color: $color-blue;
       }
     }
   }

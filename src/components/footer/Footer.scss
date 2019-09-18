@@ -1,7 +1,24 @@
+@import './../../scss/variables';
+
 footer {
   opacity: 0.8;
   font-size: 0.8em;
   text-align: center;
   padding: 0 5px;
   align-self: end;
+
+  a {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    color: inherit;
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+
+  a + a {
+    margin-left: 7px;
+  }
 }
