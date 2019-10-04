@@ -15,6 +15,12 @@ const Footer = () => {
         {' - '}
 
         <BlankTargetIconLink
+          href="https://johncol.github.io/resume"
+          icon="person"
+          title="Resume"
+        />
+
+        <BlankTargetIconLink
           href="mailto:john.19col+web-profile@gmail.com"
           icon="mail-open"
           title="Mail"
