@@ -5,4 +5,23 @@
   padding: 0 30px;
   max-width: 750px;
   margin: 0 auto;
+
+  header {
+    opacity: 0;
+    animation: appear 4s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
+  }
+
+  main {
+    opacity: 0;
+    animation: appear 6s cubic-bezier(0.075, 0.82, 0.165, 1) normal forwards;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
