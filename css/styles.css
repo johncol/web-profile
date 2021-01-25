@@ -126,5 +126,26 @@ body {
 
 }
 
-.main-card section:last-child .cta {
+@media screen and (max-width: 700px) {
+
+  /* -- main-card -- */
+
+  .main-card {
+    position: static;
+    transform: translate(0, 0);
+    width: auto;
+    min-width: auto;
+    max-width: auto;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .main-card section:first-child {
+    flex-basis: 35%;
+  }
+  
+  .main-card section:last-child {
+    flex-basis: 65%;
+  }
+
 }
