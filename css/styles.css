@@ -1,8 +1,11 @@
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: #f7f7f7;
-  font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Dosis", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
-  font-size: 13px;
 }
 
 .card {
@@ -19,12 +22,13 @@ body {
   padding: 0 45px;
   line-height: 50px;
   border-radius: 25px;
-  font-size: 13px;
+  font-size: 1.3rem;
   text-decoration: none;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.cta:hover, .cta:focus {
+.cta:hover,
+.cta:focus {
   background-color: #000;
 }
 
@@ -35,7 +39,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 90%;
   min-width: 700px;
   max-width: 900px;
   height: 450px;
@@ -69,17 +73,17 @@ body {
 }
 
 .main-card section:last-child h1 {
-  font-size: 30px;
-  font-weight: 200;
+  font-size: 3.5rem;
+  font-weight: 250;
 }
 
 .main-card section:last-child h2 {
-  font-size: 17px;
-  font-weight: 100;
+  font-size: 2.1rem;
+  font-weight: 200;
 }
 
 .main-card section:last-child .intro {
-  font-size: 12px;
+  font-size: 1.5rem;
   text-align: left;
   margin: auto;
 }
@@ -103,8 +107,8 @@ body {
   width: var(--icon-size);
   height: var(--icon-size);
   background-size: var(--icon-size);
-  filter: grayscale(.5);
-  transition: filter .2s ease-in;
+  filter: grayscale(0.5);
+  transition: filter 0.2s ease-in;
 }
 
 .main-card section:last-child .links a:hover {
@@ -117,15 +121,16 @@ body {
 
 .main-card section:last-child .links a#link-github {
   background-image: url(../assets/icons/github.png);
-
 }
 
 .main-card section:last-child .links a#link-hackerrank {
   background-image: url(../assets/icons/hackerrank.png);
-
 }
 
 @media screen and (max-width: 700px) {
+  html {
+    font-size: 12px;
+  }
 
   /* -- main-card -- */
 
@@ -142,7 +147,7 @@ body {
   .main-card section:first-child {
     flex-basis: 40%;
   }
-  
+
   .main-card section:last-child {
     flex-basis: 60%;
   }
@@ -160,9 +165,4 @@ body {
   .main-card section:last-child .links a {
     --icon-size: 40px;
   }
-
-  .main-card section:last-child .intro {
-    font-size: 13px;
-  }
-
 }
